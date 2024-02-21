@@ -1,1 +1,92 @@
-<html>Bonjour.</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  display: flex;
+	  flex-direction: column;
+	  font-family: 'Nunito', sans-serif;
+	  background-color: #F5F5F5; /* Light grey background */
+	  color: #333333; /* Deep grey text */
+
+      }
+      .container {
+	  width: 60%; /* or your preferred width */
+	  margin: 0 auto; /* Centers the container horizontally */
+	  text-align: left; /* Aligns text to the left */
+	  padding: 20px; /* Adds some padding inside the container */
+	  display: flex; /* Enables flexbox */
+	  flex-direction: column; /* Stacks children vertically */
+	  justify-content: center; /* Centers content vertically inside the container */
+      }
+      h1 {
+	  font-size: 24px;
+	  color: #333333;
+
+	  margin: 10px 0;
+	  font-family: 'Montserrat', sans-serif;
+      }
+      p {
+	  font-size: 16px;
+	  color: #333333;
+	  margin: 10px 0;
+      }
+      img {
+	  max-width: 80%;
+	  height: auto;
+	  max-height: 50vh; /* Adjust based on your needs */
+	  margin: 10px 0;
+      }
+      footer {
+	  text-align: center;
+	  font-size: 12px;
+	  color: #999;
+	  background-color: #E8E8E8; /* Slightly darker grey for footer background */
+	  padding: 10px;
+	  flex-shrink: 0; /* Prevent the footer from shrinking */
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>GRPC Status Codes</h1>
+      <p>
+	gRPC is a Remote Procedure Call used when you're tired of fixing JSON schema errors and paying CPU time parsing quotes and braces.
+      </p>
+
+      <p><strong>OK (0):</strong> The operation completed successfully.</p>
+      <p><strong>CANCELLED (1):</strong> The operation was cancelled, typically by the caller.</p>
+      <p><strong>UNKNOWN (2):</strong> An unknown error occurred. This may be used for errors that don't fit other codes.</p>
+      <p><strong>INVALID_ARGUMENT (3):</strong> The client specified an invalid argument. Indicates arguments that are problematic regardless of the state of the system.</p>
+      <p><strong>DEADLINE_EXCEEDED (4):</strong> The deadline expired before the operation could complete. This can happen if a client-specified deadline or the default system deadline is exceeded.</p>
+      <p><strong>NOT_FOUND (5):</strong> Some requested entity (e.g., file or directory) was not found.</p>
+      <p><strong>ALREADY_EXISTS (6):</strong> The entity that a client attempted to create (e.g., file or directory) already exists.</p>
+      <p><strong>PERMISSION_DENIED (7):</strong> The caller does not have permission to execute the specified operation.</p>
+      <p><strong>RESOURCE_EXHAUSTED (8):</strong> Some resource has been exhausted, perhaps a per-user quota, or perhaps the entire file system is out of space.</p>
+      <p><strong>FAILED_PRECONDITION (9):</strong> The operation was rejected because the system is not in a state required for the operation's execution.</p>
+      <p><strong>ABORTED (10):</strong> The operation was aborted, typically due to a concurrency issue like sequencer check failures, transaction aborts, etc.</p>
+      <p><strong>OUT_OF_RANGE (11):</strong> The operation was attempted past the valid range. Unlike `INVALID_ARGUMENT`, this error indicates a problem that may be fixed if the system state changes.</p>
+      <p><strong>UNIMPLEMENTED (12):</strong> The operation is not implemented or is not supported/enabled in this service.</p>
+      <p><strong>INTERNAL (13):</strong> An internal error occurred. This means some invariants expected by the underlying system have been broken. This error code is reserved for serious errors.</p>
+      <p><strong>UNAVAILABLE (14):</strong> The service is currently unavailable. This is most likely a transient condition, which can be corrected by retrying with a backoff.</p>
+      <p><strong>DATA_LOSS (15):</strong> Unrecoverable data loss or corruption.</p>
+      <p><strong>UNAUTHENTICATED (16):</strong> The request does not have valid authentication credentials for the operation.</p>
+
+      
+      <!-- <img src="https://thispersondoesnotexist.com" alt="This person definitely does not exist"> -->
+    </div>
+
+    <footer>
+      No copyright. Do whatever you want with this. Inspired by <a href="https://http.cat">http.cat</a>
+    </footer>
+  </body>
+</html>
